@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Space</th>
+            <th scope="col">Value</th>
+            <th scope="col">Category</th>
+            <th scope="col">Subcategory</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let item of items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.weight }}</td>
+          <td>{{ item.inventorySpace }}</td>
+          <td>{{ item.value }}</td>
+          <td>{{ item.category }}</td>
+          <td *ngIf="item.subcategory == '' else subcat">-</td>
+          <ng-template #subcat>
+            <td>{{ item.subcategory }}</td>
+          </ng-template>
+          <td>{{ item.count }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

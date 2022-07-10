@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ game.name }}</h5>
+    <hr/>
+    <div>
+      <table class="table">
+        <tr>
+          <td>Number of Unique Items</td>
+          <td>{{ game.uniqueItems }}</td>
+        </tr>
+        <tr>
+          <td>Total Number of Items</td>
+          <td>{{ game.totalItems }}</td>
+        </tr>
+        <tr *ngIf="game.totalWeight > 0">
+          <td>Total Weight</td>
+          <td>{{ game.totalWeight }}</td>
+        </tr>
+        <tr>
+          <td>
+            Total Inventory Value
+          </td>
+          <td>
+            {{ game.totalValue }}
+          </td>
+        </tr>
+      </table>  
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary" (click)="viewInventory()">View</button>
+  </div>
+</div>
