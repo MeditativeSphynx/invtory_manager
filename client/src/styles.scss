@@ -1,14 +1,19 @@
-$background: #0F0E0E;
+$bgdark: #0f0e0e;
+$bglight: #eee;
 
 
 body {
-  background-color: $background;
+  background-color: $bgdark;
   
   * {
-    color: $background;
+    color: $bgdark;
   }
 }
 
 div.card {
-  background-color: #EEE;
+  background-color: $bglight;
+}
+
+.bg-light {
+  background-color: $bglight !important;
 }
