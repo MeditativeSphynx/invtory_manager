@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GameComponent } from './components/routes/game-list/game/game.component';
+import { GameCardComponent } from './components/routes/game-list/game-card/game-card.component';
 import { GameListComponent } from './components/routes/game-list/game-list.component';
 import { InventoryComponent } from './components/routes/inventory/inventory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameComponent,
+    GameCardComponent,
     GameListComponent,
     InventoryComponent
   ],

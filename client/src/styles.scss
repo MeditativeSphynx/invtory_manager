@@ -1,3 +1,14 @@
+$background: #0F0E0E;
+
+
 body {
-  background-color: #233444;
+  background-color: $background;
+  
+  * {
+    color: $background;
+  }
+}
+
+div.card {
+  background-color: #EEE;
 }

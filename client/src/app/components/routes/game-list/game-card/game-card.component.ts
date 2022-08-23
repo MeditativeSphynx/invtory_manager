@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 import { Game } from '../../../../models/game';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.component.html',
-  styleUrls: ['./game.component.scss']
+  selector: 'app-game-card',
+  templateUrl: './game-card.component.html',
+  styleUrls: ['./game-card.component.scss']
 })
-export class GameComponent implements OnInit {
+export class GameCardComponent implements OnInit {
   @Input() game!: Game;
   
   constructor(private router: Router) { }
