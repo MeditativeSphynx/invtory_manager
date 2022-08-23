@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GameCardComponent } from './components/routes/game-list/game-card/game-card.component';
 import { GameListComponent } from './components/routes/game-list/game-list.component';
 import { InventoryComponent } from './components/routes/inventory/inventory.component';
+import { TopNavComponent } from './components/shared/top-nav/top-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameCardComponent,
     GameListComponent,
-    InventoryComponent
+    InventoryComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
